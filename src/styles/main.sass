@@ -1,0 +1,148 @@
+@import './quasar-variables.sass'
+@import './fonts.sass'
+//@import '~quasar-styl'
+// @import '~quasar-addon-styl'
+//
+//@font-face
+//  font-family: 'Poppins'
+//  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap')
+//
+//@font-face
+//  font-family: 'Open Sans'
+//  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&display=swap')
+
+*
+  font-family: 'Poppins', sans-serif
+  //letter-spacing: 0.05rem
+//font-family: 'Open Sans'
+
+
+.text-weight-bold
+  font-weight: 600
+
+text-weight-bolder
+  font-weight: 700
+
+.q-field--standout.q-field--highlighted .q-field__native
+  color: $accent
+
+.w-50
+  width: 50%
+
+.q-checkbox__bg
+  border-radius: 2px !important
+  margin-top: -0.4rem !important
+  border-color: $border_color !important
+
+.q-checkbox__inner--truthy
+  .q-checkbox__bg
+    background-color: $dark !important
+    border-color: $dark !important
+
+.button_rounded-2xl
+  border-radius: 1rem
+
+.text-disabled
+  color: $text_disabled
+
+.text-error
+  color: $error
+  font-size: 0.75rem
+
+.q-field--error > div > .q-field__control
+  background-color: $error_light !important
+  border: 1px solid $error !important
+  box-shadow: none !important
+
+.reverse
+  transform: rotate(180deg)
+
+.button_mobile
+  @media (max-width: $breakpoint-xs-max)
+    width: 100% !important
+    height: 42px !important
+
+.desktop_only
+  //display: inherit !important
+  @media (max-width: $breakpoint-sm-max)
+    display: none !important
+
+.mobile-tablet_only
+  @media (min-width: $breakpoint-md-min)
+     display: none !important
+
+.tablet_only
+  @media (max-width: $breakpoint-xs-max)
+    display: none !important
+  @media (min-width: $breakpoint-md-min)
+    display: none !important
+
+.mobile_only
+  @media (min-width: $breakpoint-sm-min)
+    display: none !important
+
+.a-pa-xs-md
+  @media (max-width: $breakpoint-xs-max)
+    padding: 1rem !important
+
+.q-pr-xs-none
+  @media (max-width: $breakpoint-xs-max)
+    padding-right: 0 !important
+
+.q-pl-xs-none
+  @media (max-width: $breakpoint-xs-max)
+    padding-left: 0 !important
+
+.q-mt-xs-none
+  @media (min-width: $breakpoint-xs-max)
+      margin-top: 0 !important
+
+.q-mr-xs-none
+  @media (min-width: $breakpoint-xs-max)
+    margin-right: 0 !important
+
+.q-mt-sm-none
+  @media (min-width: $breakpoint-sm-min)
+    margin-top: 0 !important
+
+.q-mb-sm-lg
+  @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max)
+    margin-bottom: 1.5rem !important
+
+.q-mb-md-lg
+  @media (max-width: $breakpoint-xs-max)
+    margin-bottom: 1.5rem !important
+
+.q-pa-xs-md
+  @media (max-width: $breakpoint-xs-max)
+    padding: 1rem !important
+
+.q-mt-xs-md
+  @media (max-width: $breakpoint-xs-max)
+    margin-top: 1rem !important
+
+.q-mt-xs-lg
+  @media (max-width: $breakpoint-xs-max)
+    margin-top: 1.5rem !important
+
+.q-mx-xs-none
+  @media (max-width: $breakpoint-xs-max)
+    margin-left: 0 !important
+    margin-right: 0 !important
+
+.q-mx-xs-xs
+  @media (max-width: $breakpoint-xs-max)
+    margin-left: 0.25rem !important
+    margin-right: 0.25rem !important
+
+.text-standard
+  line-height: 1.5rem
+  font-size: 0.875rem
+
+.padding_relative
+  background-color: #F5F6FE
+  padding: 2.5rem 1.875rem
+  @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max)
+    padding: 1.875rem
+  @media (max-width: $breakpoint-xs-max)
+    padding: 1.25rem 1rem
